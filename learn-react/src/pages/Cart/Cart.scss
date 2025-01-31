@@ -1,0 +1,31 @@
+.cart{
+  &__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &--title{
+      font-size: 40px;
+      font-weight: 700;
+    }
+    &--delete{
+      font-size: 30px;
+      font-weight: 700;
+      color: red;
+    }
+  }
+  &__main{
+    &--desc{
+      font-size: 40px;
+      font-weight: 500;
+      color: gray;
+    }
+    &--total{
+      font-size: 30px;
+      font-weight: 700;
+      span{
+        color: red;
+      }
+    }
+  }
+}

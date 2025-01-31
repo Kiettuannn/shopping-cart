@@ -1,0 +1,54 @@
+.product{
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  &__item{
+    width: 20%;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+   
+  }
+  &__image{
+    width: 100%;
+    aspect-ratio: 4/3;
+
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__content{
+    padding-left: 10px;
+    margin-bottom: 10px;
+
+    
+    &--title{
+      font-size: 23px;
+      font-weight: 700;
+    }
+    &--newPrice{
+      color: #FF4F5B;
+      font-size: 25px;
+      font-weight: 700;
+    }
+    &--oldPrice{
+      text-decoration: line-through;
+      font-size: 20px;
+    }
+    &--discount{
+      font-size: 25px;
+      font-weight: 600;
+    }
+  }
+  &__add{
+    margin-top: auto;
+    width: 50%;
+    margin-left: 10px;
+  }
+}
